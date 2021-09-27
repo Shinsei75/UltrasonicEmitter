@@ -157,50 +157,6 @@ F 3 "~" H 5000 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:BD436 Q1
-U 1 1 6151353C
-P 7300 3900
-F 0 "Q1" H 7492 3854 50  0000 L CNN
-F 1 "BD436" H 7492 3945 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 7500 3825 50  0001 L CIN
-F 3 "http://www.cdil.com/datasheets/bd433_42.pdf" H 7300 3900 50  0001 L CNN
-	1    7300 3900
-	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_BJT:BD436 Q2
-U 1 1 61516459
-P 8200 3900
-F 0 "Q2" H 8391 3854 50  0000 L CNN
-F 1 "BD436" H 8391 3945 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 8400 3825 50  0001 L CIN
-F 3 "http://www.cdil.com/datasheets/bd433_42.pdf" H 8200 3900 50  0001 L CNN
-	1    8200 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L Transistor_BJT:BD433 Q3
-U 1 1 61516A01
-P 7300 4650
-F 0 "Q3" H 7492 4696 50  0000 L CNN
-F 1 "BD433" H 7492 4605 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 7500 4575 50  0001 L CIN
-F 3 "http://www.cdil.com/datasheets/bd433_42.pdf" H 7300 4650 50  0001 L CNN
-	1    7300 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BD433 Q4
-U 1 1 6151725D
-P 8200 4650
-F 0 "Q4" H 8391 4696 50  0000 L CNN
-F 1 "BD433" H 8391 4605 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 8400 4575 50  0001 L CIN
-F 3 "http://www.cdil.com/datasheets/bd433_42.pdf" H 8200 4650 50  0001 L CNN
-	1    8200 4650
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:R R2
 U 1 1 615185DA
 P 6700 3900
@@ -546,42 +502,99 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 61563630
-P 5500 1900
-F 0 "J2" H 5580 1892 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 5580 1801 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 5500 1900 50  0001 C CNN
-F 3 "~" H 5500 1900 50  0001 C CNN
-	1    5500 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0102
-U 1 1 61564D66
-P 5250 1850
-F 0 "#PWR0102" H 5250 1700 50  0001 C CNN
-F 1 "+5V" H 5265 2023 50  0000 C CNN
-F 2 "" H 5250 1850 50  0001 C CNN
-F 3 "" H 5250 1850 50  0001 C CNN
-	1    5250 1850
+P 5550 1900
+F 0 "J2" H 5630 1892 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 5630 1801 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 5550 1900 50  0001 C CNN
+F 3 "~" H 5550 1900 50  0001 C CNN
+	1    5550 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 6156A74B
-P 5250 2050
-F 0 "#PWR0103" H 5250 1800 50  0001 C CNN
-F 1 "GND" H 5255 1877 50  0000 C CNN
-F 2 "" H 5250 2050 50  0001 C CNN
-F 3 "" H 5250 2050 50  0001 C CNN
-	1    5250 2050
+P 5300 2050
+F 0 "#PWR0103" H 5300 1800 50  0001 C CNN
+F 1 "GND" H 5305 1877 50  0000 C CNN
+F 2 "" H 5300 2050 50  0001 C CNN
+F 3 "" H 5300 2050 50  0001 C CNN
+	1    5300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 61564D66
+P 4800 1750
+F 0 "#PWR0102" H 4800 1600 50  0001 C CNN
+F 1 "+5V" H 4815 1923 50  0000 C CNN
+F 2 "" H 4800 1750 50  0001 C CNN
+F 3 "" H 4800 1750 50  0001 C CNN
+	1    4800 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6151127F
+P 5050 1900
+F 0 "SW1" H 5050 2185 50  0000 C CNN
+F 1 "SW_Push" H 5050 2094 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5050 2100 50  0001 C CNN
+F 3 "~" H 5050 2100 50  0001 C CNN
+	1    5050 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 1850 5250 1900
+	4800 1750 4800 1900
 Wire Wire Line
-	5250 1900 5300 1900
+	4800 1900 4850 1900
 Wire Wire Line
-	5300 2000 5250 2000
+	5250 1900 5350 1900
 Wire Wire Line
-	5250 2000 5250 2050
+	5350 2000 5300 2000
+Wire Wire Line
+	5300 2000 5300 2050
+$Comp
+L Transistor_BJT:BD436 Q3
+U 1 1 6152DA1B
+P 7300 4650
+F 0 "Q3" H 7492 4604 50  0000 L CNN
+F 1 "BD436" H 7492 4695 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 7500 4575 50  0001 L CIN
+F 3 "http://www.cdil.com/datasheets/bd433_42.pdf" H 7300 4650 50  0001 L CNN
+	1    7300 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BD436 Q4
+U 1 1 6152E1D4
+P 8200 4650
+F 0 "Q4" H 8391 4604 50  0000 L CNN
+F 1 "BD436" H 8391 4695 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 8400 4575 50  0001 L CIN
+F 3 "http://www.cdil.com/datasheets/bd433_42.pdf" H 8200 4650 50  0001 L CNN
+	1    8200 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BD433 Q1
+U 1 1 6152EA39
+P 7300 3900
+F 0 "Q1" H 7492 3946 50  0000 L CNN
+F 1 "BD433" H 7492 3855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 7500 3825 50  0001 L CIN
+F 3 "http://www.cdil.com/datasheets/bd433_42.pdf" H 7300 3900 50  0001 L CNN
+	1    7300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BD433 Q2
+U 1 1 6152F4F5
+P 8200 3900
+F 0 "Q2" H 8391 3946 50  0000 L CNN
+F 1 "BD433" H 8391 3855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 8400 3825 50  0001 L CIN
+F 3 "http://www.cdil.com/datasheets/bd433_42.pdf" H 8200 3900 50  0001 L CNN
+	1    8200 3900
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
